@@ -17,13 +17,13 @@ public class TestCase1 extends TestCase{
 		system.out.println("TestAddBcc worked! -ozj___");
 	}
 
-	public testAddBccMult() throws EmailException {
+	public void testAddBccMult() throws EmailException {
 		String [] emails = {"a@b.com", "b@c.com"};
 		testEmail.addBcc(emails);
 		assertEquals("a@b.com", testEmail.getBccAddresses().get(0).toString());
 		system.out.println("TestAddBccMult worked! -ozj___");
 	}
-	public testAddCc() throws EmailExceptions {
+	public void testAddCc() throws EmailExceptions {
 		testEmail.addCc("a@b.com");
 		assertEquals("a@b.com", testEmail.getCcAddresses().get(0).toString());
 		system.out.println("TestAddCc worked! -ozj___");
