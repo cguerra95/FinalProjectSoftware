@@ -10,7 +10,7 @@ pipeline {
     stage('Test Stage') {
       steps {
         sh 'mvn test'
-        echo 'First Test Case -ozj___'
+        echo 'Test Case1 & 2 added -ozj___'
       }
     }
 
