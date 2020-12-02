@@ -23,7 +23,7 @@ public class TestCase2 extends TestCase{
 		assertEquals("a@b.com", testEmail.getBccAddresses().get(0).toString());
 		System.out.println("TestAddBccMult worked! -ozj___");
 	}
-	public void testAddCc() throws EmailExceptions {
+	public void testAddCc() throws EmailException {
 		testEmail.addCc("a@b.com");
 		assertEquals("a@b.com", testEmail.getCcAddresses().get(0).toString());
 		System.out.println("TestAddCc worked! -ozj___");
