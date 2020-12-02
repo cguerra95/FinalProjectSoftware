@@ -14,5 +14,11 @@ pipeline {
       }
     }
 
+    stage('Deliver Stage') {
+      steps {
+        sh 'echo "Test is DONE! -ozj___"'
+      }
+    }
+
   }
 }
