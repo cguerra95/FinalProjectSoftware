@@ -12,9 +12,21 @@ public class TestCase2 extends TestCase{
 		testEmail = new SimpleEmail();
 	}
 	public void testAddBcc() throws EmailException {
-		System.out.println("This is a message from the template test.");
 		testEmail.addBcc("a@b.com");
 		assertEquals("a@b.com", testEmail.getBccAddresses().get(0).toString());
+		system.out.println("TestAddBcc worked! -ozj___");
+	}
+
+	public testAddBccMult() throws EmailException {
+		String [] emails = {"a@b.com", "b@c.com"};
+		testEmail.addBcc(emails);
+		assertEquals("a@b.com", testEmail.getBccAddresses().get(0).toString());
+		system.out.println("TestAddBccMult worked! -ozj___");
+	}
+	public testAddCc() throws EmailExceptions {
+		testEmail.addCc("a@b.com");
+		assertEquals("a@b.com", testEmail.getCcAddresses().get(0).toString());
+		system.out.println("TestAddCc worked! -ozj___");
 	}
 
 }
