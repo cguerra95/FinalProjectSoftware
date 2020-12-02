@@ -7,5 +7,12 @@ pipeline {
       }
     }
 
+    stage('Test Stage') {
+      steps {
+        sh 'mvn test'
+        echo 'First Test Case -ozj___'
+      }
+    }
+
   }
 }
